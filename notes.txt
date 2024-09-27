@@ -1,6 +1,44 @@
+.... NestJs intro
+
 1. NestJs is for building efficient, scalable Node.js server-side application.
 2. It uses progressive JavaScript, is built with and fully supports TypeScript.
 3. It Combines elements of OOP (Object Oriented Programming), FP (Functional Programming), and FRP (Functional Reactive Programming).
 4. Under the hood, Nest makes use of robust HTTP Server frameworks like Express (the default) and optionally can be configured to use Fastify as well!
 
+.... Features of NestJs
 
+1. Nest.js was created to help developers create Monoliths and Microservices.
+2. It's simple to use, quick to learn, and easy to apply
+3. It's leverages TypeScript - strongly typed language which is a superset of JavaScript
+4. Powerful Command Line interface (CLI) to boost productivity and ease of development
+5. Support for dozens of nest-specific modules that help you easily integrate with common technologies and concepts like Type ORM, Mongoose, GraphQL, Logging, Validation, Caching, WebSockets, and much Microservices
+6. Easy unit-testing applications
+7. Great documentation.
+8. Built for large-scale enterprise applications.
+
+
+There are 3 main components of NestJS ==> controllers, providers, and modules.
+
+1. Modules: 
+    A module is a class with a @Module() decorator.
+
+    Each application has a root module, which Nest uses as a strarting point to resolve the application's structure and relationships.
+
+    It's highly recommended to use multiple modules to organise your application components.
+
+    The @Module() decorter provides metadata that Nest makes use to organize the application structure.
+
+2. Controllers:
+    A controller's purpose is to receive specific requests for the application.
+
+    The controller then handles the request and returns the appropriate response.
+
+3. Providers
+    Providers are fundamental to Nest
+
+    Providers are plaine JavaScript classes that are declared as providers in a module.
+
+    Classes such as services, repositories, or helper can be treated as providers simply by adding Nest's `@Injectable()` decorator.
+
+    Providers can be injected into a class through the constructor, and Nest will handle resolving the dependencies, making dependency management extremely easy.
+    
